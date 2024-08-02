@@ -6,6 +6,9 @@ temp/*
 data/*
 !data/.gitkeep
 
+static/*
+!static/.gitkeep
+
 
 .env.docker
 
