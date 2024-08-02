@@ -1,0 +1,8 @@
+pip-tools
+streamlit
+pandas
+openai
+requests
+icecream
+st-copy-to-clipboard
+streamlit-extras

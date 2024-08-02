@@ -1,0 +1,21 @@
+
+services:
+
+  streamlit:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:65261:8501"
+    expose:
+      - "8501"
+    volumes:
+      - ./:/home/dude/app/
+    tty: true
+    restart: unless-stopped
+    hostname: 'streamlit'
+    # environment:
+    #   - TEST='true'
+    env_file:
+      - ./.env.docker
+  
